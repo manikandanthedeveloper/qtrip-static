@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>QTrip - Explore the World</title>
+		<!-- TODO: MODULE_LAYOUT -->
+		<!-- 1. Create a <link> to the first stylesheet needed for Bootstrap -->
+		<!-- Bootstrap CSS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+		/>
+
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="./css/styles.css" />
+	</head>
+
+	<body>
+		<!-- TODO: MODULE_LAYOUT -->
+		<!-- 1. Use appropriate css classes on nav element. -->
+		<!-- 2. Add child elements as required. -->
+
+		<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+			<div class="container">
+				<a class="navbar-brand fw-bold fs-3" href="#"> QTrip </a>
+
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarMenu"
+					aria-controls="navbarMenu"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarMenu">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a class="nav-link active" href="#"> Home </a>
+						</li>
+
+						<li class="nav-item">
+							<a
+								class="nav-link"
+								href="./pages/adventures/index.html"
+							>
+								Explore
+							</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="#about"> About </a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- TODO: MODULE_LAYOUT -->
+		<!-- 1. Use appropriate css classes on the hero image container element. -->
+		<!-- 2. Add child elements as required. -->
+
+		<!-- Hero Section -->
+		<div
+			class="hero-image d-flex align-items-center justify-content-center text-center"
+		>
+			<div class="hero-subheading text-white">
+				<h1>Welcome to QTrip</h1>
+
+				<p>Explore the world with fantastic places to venture around</p>
+
+				<div class="hero-input mx-auto">
+					<input
+						type="text"
+						class="form-control"
+						placeholder="Search a City"
+						aria-label="Search a City"
+					/>
+				</div>
+			</div>
+		</div>
+		<section class="destination-section" id="destinations">
+			<div class="container">
+				<!-- TODO: MODULE_LAYOUT -->
+				<!-- 1. Create the grid like layout as required. -->
+
+				<!-- Bootstrap Responsive Grid -->
+				<div class="row g-4" id="destinationList">
+					<!-- Card 1 -->
+					<div class="col-12 col-sm-6 col-lg-3">
+						<div class="card adventure-card shadow-sm">
+							<img
+								src="./assets/bengaluru.jpg"
+								class="card-img-top"
+								alt="bengaluru"
+							/>
+							<div class="tile-text">
+								<h4>Bengaluru</h4>
+								<p>100+ Places</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Card 2 -->
+					<div class="col-12 col-sm-6 col-lg-3">
+						<div class="card adventure-card shadow-sm">
+							<img
+								src="./assets/dubai.jpg"
+								class="card-img-top"
+								alt="dubai"
+							/>
+							<div class="tile-text">
+								<h4>Dubai</h4>
+								<p>80+ Places</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Card 3 -->
+					<div class="col-12 col-sm-6 col-lg-3">
+						<div class="card adventure-card shadow-sm">
+							<img
+								src="./assets/goa.jpg"
+								class="card-img-top"
+								alt="goa"
+							/>
+							<div class="tile-text">
+								<h4>Goa</h4>
+								<p>120+ Places</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Card 4 -->
+					<div class="col-12 col-sm-6 col-lg-3">
+						<div class="card adventure-card shadow-sm">
+							<img
+								src="./assets/kolkata.jpg"
+								class="card-img-top"
+								alt="kolkata"
+							/>
+							<div class="tile-text">
+								<h4>Kolkata</h4>
+								<p>190+ Places</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Card 5 -->
+					<div class="col-12 col-sm-6 col-lg-3">
+						<div class="card adventure-card shadow-sm">
+							<img
+								src="./assets/malaysia.jpg"
+								class="card-img-top"
+								alt="malaysia"
+							/>
+							<div class="tile-text">
+								<h4>Malaysia</h4>
+								<p>145+ Places</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Card 6 -->
+					<div class="col-12 col-sm-6 col-lg-3">
+						<div class="card adventure-card shadow-sm">
+							<img
+								src="./assets/mumbai.jpg"
+								class="card-img-top"
+								alt="mumbai"
+							/>
+							<div class="tile-text">
+								<h4>Mumbai</h4>
+								<p>70+ Places</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Card 7 -->
+					<div class="col-12 col-sm-6 col-lg-3">
+						<div class="card adventure-card shadow-sm">
+							<img
+								src="./assets/paris.jpg"
+								class="card-img-top"
+								alt="paris"
+							/>
+							<div class="tile-text">
+								<h4>Paris</h4>
+								<p>35+ Places</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Card 8 -->
+					<div class="col-12 col-sm-6 col-lg-3">
+						<div class="card adventure-card shadow-sm">
+							<img
+								src="./assets/singapore.jpg"
+								class="card-img-top"
+								alt="singapore"
+							/>
+							<div class="tile-text">
+								<h4>Singapore</h4>
+								<p>83+ Places</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="container">© QTrip 2020</div>
+		</footer>
+
+		<!-- TODO: MODULE_LAYOUT -->
+		<!-- Add scripts needed for bootstrap to work -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>
